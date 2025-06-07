@@ -458,7 +458,6 @@ if(pba->has_UG == _TRUE_){
   double F_1;
   double F;
 
-  printf("H_0 %f\n ", pba->H0);
 
 
 /* densities are all expressed in units of \f$ [3c^2/8\pi G] \f$, ie

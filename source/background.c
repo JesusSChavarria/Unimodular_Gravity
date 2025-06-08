@@ -466,7 +466,7 @@ if(pba->has_UG == _TRUE_){
   double a_start = pba->a_start;
   double rho_lambda = pba->Omega0_lambda*pow(pba->H0,2.);
   double Model= pba->model;
-
+   
 /* for a ---(a_rad, a_start-delta/2) */
   if (Model==1){
   if(a<= a_start-delta/2 ){
@@ -523,8 +523,12 @@ pvecback[pba->index_bg_rho_lambda]= rho_lambda+ ((Delta_rho)/_PI_)*(atan((a-a_st
     p_tot -= pvecback[pba->index_bg_rho_lambda];
   }
 /* END MODIFICATION ML */
+printf("Delta %f\n ", pba->Delta_rho_Lambda);
+printf("a_start %f\n ", pba->a_start);
+printf("delta %f\n ", pba->delta);
 
-/* TERMINAL 
+
+  /* TERMINAL 
 if(pba->count<=pba->count_terminal){ 
   printf("count %f\n ", pba->count);
   printf("a= %f\n ", a);

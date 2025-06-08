@@ -524,9 +524,6 @@ if (Model==2){
     p_tot -= pvecback[pba->index_bg_rho_lambda];
   }
 /* END MODIFICATION ML */
-printf("Delta %f\n ", pba->Delta_rho_Lambda);
-printf("a_start %f\n ", pba->a_start);
-printf("delta %f\n ", pba->delta);
 /* TERMINAL 
 if(pba->count<=pba->count_terminal){ 
   printf("count %f\n ", pba->count);
